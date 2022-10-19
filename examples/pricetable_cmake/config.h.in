@@ -1,0 +1,6 @@
+//Use set command to define the C preprocessor macro
+//#cmakedefine PRINT_NEGATIVE_TABLE @PRINT_NEGATIVE_TABLE@
+//#cmakedefine PRINT_NEGATIVE @PRINT_NEGATIVE@
+
+//Use option command directly to define the C preprocessor macro
+#cmakedefine PRINT_NEGATIVE_TABLE @PRINT_NEGATIVE_TABLE@
