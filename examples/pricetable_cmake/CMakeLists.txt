@@ -12,7 +12,12 @@ project(StockPrice VERSION 1.0)
 option(PRINT_NEGATIVE_TABLE "Print the negative price table" ON)
 option(BUILD_SHARED_LIBS "Build using shared libraries" ON)
 
+set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+
 add_executable(stockprice main.cc)
+
+install(TARGETS stockprice RUNTIME DESTINATION bin)
 
 configure_file(config.h.in config.h)
 
